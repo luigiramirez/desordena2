@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Lato');
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	padding-top: 25px;
+	background: #ECF0F1;
+	color: #FFF;
+	font: 1em/1.3 sans-serif;
+}
+.site-container {
+	margin: 0 auto;
+	width:90%;
+	max-width: 1400px;
+}
+.site-header {
+	/*background: #34495E;*/
+	background: #FFFFFF;
+	text-align: center;
+}
+.logo,
+.main-nav a {
+	display: inline-block;
+	color: #000000;
+	text-decoration: none;
+}
+.logo{float: left;}
+.main-nav{float: right;}
+.main-nav a {
+	padding: 0 .75em;
+	border-right: 1px solid;
+	color: #000000;
+	font-size: .7em;
+	line-height: 1rem;
+}
+.main-nav a:hover {
+	text-decoration: underline;
+}
+.main-nav a:last-child {
+	border-right: none;
+}
+.content,
+.site-header {
+	overflow: hidden;
+	/*font-family: 'Lato', sans-serif;*/
+}
+.col {
+	height: auto;
+	float: left
+}
+.main {
+	/*background: #3498DB;*/
+	background: #ffffff;
+	width:67.8%;
+	color: #000000;
+}
+.secondary {
+	/*background: #323232;*/
+	background: #ffffff;
+	width: 30%;
+	margin-left: 2.127659574468%;
+	color:black;
+}
+.extra {
+	display: none;
+	background: #E74C3C;
+}
+.site-footer {
+	background: #95A5A6;
+}
+.site-header,
+.site-footer,
+.col {
+	margin-bottom: 15px;
+	padding: 1.9%;
+}
+
+/*WIDE ASIDE*/
+.wide-aside {
+	padding-top: 1.19%;
+	padding-bottom: 1.19%;
+	margin-bottom: 15px;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.snippet-box {
+    border: 1px solid #ccc;
+    max-width: 24%;
+    display: inline-block;
+}
+.hundred{
+    width:100%;
+}
+.snippet-text {
+    padding: 8px 8px;
+}
+.unbullet {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+/* SOCIAL SHARE --- */
+.slide-social{
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 1em 1em 0;
+    width: 9em;
+    height: 3em;
+    background: #F1F1F1;
+    background: rgba(0,0,0,.05);
+    position: relative; /* So social buttons don't align with positioned ancestor */
+}
+
+.slide-social .ss-button{
+    position: absolute;
+    top: 1em;
+    left: 35%;
+}
+
+.ss-icon{
+    padding-top: 1em; /* .slide-social{height} - .ss-icon i{height}*/
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+
+.ss-icon i{
+    border-right: 1px solid #FFF; /* IE < 9 Fallback Colour */
+    border-right-color: rgba(255,255,255,.3);
+    color: #FFF;
+    display: block;
+    font-size: 1.2em;
+    height: 1em;
+}
+
+.ss-slide{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    color: #FFF;
+    text-align: center;
+    font-weight: 600;
+    line-height: 3em; /* .slide-social{height} */
+    cursor: pointer;
+}
+
+/* Brand Colours */
+
+.facebook-bg{
+    background: #3b5998;
+}
+
+.twitter-bg{
+    background: #00acee;
+}
+
+.google-plus-bg{
+    background: #db4a39;
+}
+
+.linkedin-bg{
+    background: #0e76a8;
+}
+
+.pinterest-bg{
+    background: #c8232c;
+}
+
+.tumblr-bg{
+    background: #35465c;
+}
+
+/* Slide Animation */
+
+.slide-social:hover .ss-slide, 
+.slide-social .ss-slide:hover{
+    -webkit-transform: translate(101%, 0);
+    -moz-transform: translate(101%, 0);
+    -ms-transform: translate(101%, 0);
+    -o-transform: translate(101%, 0);
+    transform: translate(101%, 0);
+}
+
+.slide-social:hover .ss-icon i{
+    border-right-color: transparent;
+}
+
+/* Transition */
+
+.ss-slide{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out 2s;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.slide-social:hover .ss-slide{
+    -ms-transition-delay: 0s;
+}
+
+/* Example Media Queries */
+
+@media only screen and (max-width : 30em) { /* 480px/16px = 30em */
+
+    .slide-social{
+        width: 100%;
+    }
+
+    .slide-social .ss-button{
+        left: 50%;
+    }
+}
